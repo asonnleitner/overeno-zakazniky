@@ -2,7 +2,15 @@ import type { OrderDetails } from './types'
 import { API_CONFIG } from './config'
 import { ValidationError } from './errors'
 
+/**
+ * Validates order details before submission to Heureka service
+ */
 export class OrderValidator {
+  /**
+   * Validates order details against Heureka service requirements
+   * @param {OrderDetails} order - Order details to validate
+   * @throws {ValidationError} When validation fails
+   */
   static validate(order: OrderDetails): void {
     if (!order.email?.trim())
       throw new ValidationError('Email is required')
@@ -20,5 +28,11 @@ export class OrderValidator {
     }
   }
 
+  /**
+   * Validates email format
+   * @param {string} email - Email address to validate
+   * @returns {boolean} True if email format is valid
+   * @private
+   */
   static #isValidEmail = (email: string): boolean => /^[^\s@]+@[^\s@][^\s.@]*\.[^\s@]+$/.test(email)
 }
