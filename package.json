@@ -2,8 +2,8 @@
   "name": "overeno-zakazniky",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.9.0",
-  "description": "_description_",
+  "packageManager": "pnpm@9.12.3",
+  "description": "Node.js/TypeScript client for Heureka ShopCertification (Ověřeno zákazníky) service. Allows e-commerce websites to log orders for customer satisfaction verification.",
   "author": "Andreas Sonnleitner <56999154+asonnleitner@users.noreply.github.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/asonnleitner",
@@ -13,7 +13,15 @@
     "url": "git+https://github.com/asonnleitner/overeno-zakazniky.git"
   },
   "bugs": "https://github.com/asonnleitner/overeno-zakazniky/issues",
-  "keywords": [],
+  "keywords": [
+    "heureka",
+    "shop-certification",
+    "ověřeno zákazníky",
+    "overeno zakazniky",
+    "e-commerce",
+    "czech",
+    "slovak"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
